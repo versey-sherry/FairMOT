@@ -37,6 +37,8 @@ cd src/lib/models/networks/DCNv2_new sh make.sh
 * We use [DCNv2](https://github.com/CharlesShang/DCNv2) in our backbone network and more details can be found in their repo. 
 * In order to run the code for demos, you also need to install [ffmpeg](https://www.ffmpeg.org/).
 
+To fix `ModuleNotFoundError: No module named '_ext'` Please navigate to src/lib/models/networks/DCNv2 and run ./make.sh.
+
 ## Data preparation
 
 We use the same training data as [JDE](https://github.com/Zhongdao/Towards-Realtime-MOT). Please refer to their [DATA ZOO](https://github.com/Zhongdao/Towards-Realtime-MOT/blob/master/DATASET_ZOO.md) to download and prepare all the training data including Caltech Pedestrian, CityPersons, CUHK-SYSU, PRW, ETHZ, MOT17 and MOT16. 

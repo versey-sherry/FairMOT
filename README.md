@@ -37,7 +37,23 @@ cd src/lib/models/networks/DCNv2_new sh make.sh
 * We use [DCNv2](https://github.com/CharlesShang/DCNv2) in our backbone network and more details can be found in their repo. 
 * In order to run the code for demos, you also need to install [ffmpeg](https://www.ffmpeg.org/).
 
-To fix `ModuleNotFoundError: No module named '_ext'` Please navigate to src/lib/models/networks/DCNv2 and run ./make.sh.
+To fix `ModuleNotFoundError: No module named '_ext'` Please navigate to src/lib/models/networks/DCNv2 and run `./make.sh`., 
+
+Alternatively, you can creating an conda environment from an ``environment.yml`` file
+```
+conda env create -f environment.yml
+```
+The first line of the ``yml`` file sets the new environment's name. For more details see [Conda Documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file)
+
+Activate the new environment
+```
+conda activate FairMOT
+```
+Verify the new environment
+```
+conda env list
+```
+
 
 ## Data preparation
 
